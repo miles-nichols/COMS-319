@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Mechanical Keyboard",
+        "description": "High-quality mechanical keyboard with RGB lighting.",
+        "price": 99.99,
+        "image": "https://th.bing.com/th/id/OIP.wM_CeHQjhXuL_k4cp0SO0AHaE8?rs=1&pid=ImgDetMain"
+    },
+    {
+        "name": "Gaming Mouse",
+        "description": "Ergonomic gaming mouse with customizable buttons.",
+        "price": 59.99,
+        "image": "https://i5.walmartimages.com/asr/8f77473e-1879-4cf4-b71f-4d4054e65f13_1.c87e76c29411372e0af9dd6c4f28e1b9.jpeg"
+    },
+    {
+        "name": "HD Webcam",
+        "description": "1080p webcam for crystal clear video calls.",
+        "price": 49.99,
+        "image": "https://th.bing.com/th/id/OIP.bTDzGFj5k8WOHk_lh7vqIQAAAA?rs=1&pid=ImgDetMainhttps://th.bing.com/th/id/OIP.bTDzGFj5k8WOHk_lh7vqIQAAAA?rs=1&pid=ImgDetMain"
+    }
+]
