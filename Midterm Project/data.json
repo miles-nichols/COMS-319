@@ -1,0 +1,25 @@
+{
+    "featuredProducts": [
+        {
+            "name": "Razor Blackwidow",
+            "description": "A high-performance mechanical keyboard with RGB lighting.",
+            "price": 99.00,
+            "image": "https://m.media-amazon.com/images/I/71m+Xv1JKML._AC_SX466_.jpg",
+            "link": "https://www.amazon.com/Razer-BlackWidow-Mechanical-Doubleshot-Stabilizers/dp/B0C8QYB8W6?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=ATVPDKIKX0DER"
+        },
+        {
+            "name": "Corsair- Scimitar",
+            "description": "An ergonomic wireless mouse with ultra-fast response time.",
+            "price": 59.99,
+            "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6393/6393997_sd.jpg;maxHeight=640;maxWidth=550;format=webp",
+            "link": "https://www.bestbuy.com/site/corsair-scimitar-rgb-elite-wired-optical-gaming-mouse-with-17-programmable-buttons-black/6393997.p?skuId=6393997&utm_source=feed"
+        },
+        {
+            "name": "Astro A40s",
+            "description": "Immerse yourself in sound with active noise cancellation technology.",
+            "price": 129.99,
+            "image": "https://resource.astrogaming.com/w_692,c_lpad,ar_4:3,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/astro/en/products/a40-tr-gen4/a40-gen4-gallery-ps4-01-refresh.png?v=1",
+            "link": "https://www.logitechg.com/en-us/products/gaming-audio/a40-tr-gen-4.html?utm_source=google&utm_source=Google&utm_medium=Paid-Search&utm_campaign=DEPT_FY25_QX_USA_GA_G_DTX-LogiG-PMax-Astro_Google_na&gad_source=1&gclid=CjwKCAjw1NK4BhAwEiwAVUHPUATLk22WENGQk_ZamAW2FvF8--fZ_7MR5tNs5RDmXMyUsyvhekxoiRoCAvsQAvD_BwE"
+        }
+    ]
+}

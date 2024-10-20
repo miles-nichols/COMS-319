@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechGear Hub - Home</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header class="bg-dark text-white p-3 text-center">
@@ -23,10 +23,29 @@
             <h2>Welcome to TechGear Hub</h2>
             <p>Your one-stop shop for computer peripherals.</p>
         </section>
+
+        <section id="featured-products" class="my-5">
+            <h2>Featured Products</h2>
+            <div class="row" id="product-cards">
+            </div>
+        </section>
+
+        <section id="promotions" class="my-5">
+            <h2>Current Promotions</h2>
+            <p>Get 10% off all gaming keyboards! Use promo code <strong>GAMER2024</strong> at checkout.</p>
+            <p>Free shipping on orders over $100.</p>
+        </section>
+
+        <section id="industry-news" class="my-5">
+            <h2>Latest Industry News</h2>
+            <p>Check out the latest trends in tech peripherals on our <a href="news.html">News</a> page.</p>
+        </section>
     </main>
 
     <footer class="bg-dark text-white p-3 text-center">
         <p>&copy; 2024 TechGear Hub. All rights reserved.</p>
     </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>

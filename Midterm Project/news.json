@@ -1,0 +1,22 @@
+{
+    "articles": [
+        {
+            "title": "Best Mousepads of 2024",
+            "description": "These are what Tom's Hardware consider to be your best mousepads of 2024",
+            "image": "https://cdn.mos.cms.futurecdn.net/yhduExDMUz9pgEeQTDyoAm-650-80.jpg.webp",
+            "link": "https://www.tomshardware.com/best-picks/best-rgb-mouse-pads-gaming-pc"
+        },
+        {
+            "title": "Gaming Keyboards: What’s New in 2024",
+            "description": "These are what PC gamers consider to be the best keyboards of the year",
+            "image": "https://images.unsplash.com/photo-1701338678701-c053ba5d6ee1?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "link": "https://www.pcgamer.com/best-gaming-keyboard/"
+        },
+        {
+            "title": "Best Computer Mice: Find the one for you",
+            "description": "Find the mouse that best fits you!",
+            "image": "https://images.unsplash.com/photo-1628832307345-7404b47f1751?q=80&w=1783&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "link": "https://www.pcgamer.com/the-best-gaming-mouse/"
+        }
+    ]
+}
