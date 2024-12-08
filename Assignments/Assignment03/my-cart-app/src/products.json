@@ -1,0 +1,39 @@
+[
+    {
+      "id": 1,
+      "name": "Electric Kettle",
+      "price": 39.99,
+      "image": "https://th.bing.com/th/id/OIP.T7pUONAZaxaj2Txs7QMawAHaIk?w=187&h=217&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    },
+    {
+      "id": 2,
+      "name": "Blender",
+      "price": 89.99,
+      "image": "https://th.bing.com/th/id/OIP.HYwfBei_aHC24TW-iYZanQHaHa?w=197&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    },
+    {
+      "id": 3,
+      "name": "Toaster",
+      "price": 49.99,
+      "image": "https://th.bing.com/th/id/OIP.JqZFOqfKvsmNABSJ-FMwVAAAAA?w=188&h=188&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    },
+    {
+      "id": 4,
+      "name": "Microwave Oven",
+      "price": 129.99,
+      "image": "https://th.bing.com/th/id/OIP.KALvXvlHRxt81qaMEibOcgHaFj?w=228&h=186&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    },
+    {
+      "id": 5,
+      "name": "Coffee Maker",
+      "price": 59.99,
+      "image": "https://th.bing.com/th/id/OIP.v7ORILVh4Fl0C88CzQDN9QHaHa?w=217&h=217&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    },
+    {
+      "id": 6,
+      "name": "Rice Cooker",
+      "price": 79.99,
+      "image": "https://th.bing.com/th/id/OIP.YzK-slsLF8Xaz2Qlro60owHaHg?w=987&h=1000&rs=1&pid=ImgDetMain"
+    }
+  ]
+  

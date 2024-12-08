@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+     <!-- 
+    Author: Miles Nichols
+    ISU Netid: milesn@iastate.edu
+    Date: November 11, 2024
+    -->
+
+    <h1>Best Movies</h1>
+    <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+            <div id="col" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3"></div>
+        </div>
+    </div>
+
+    <input id="movieId" placeholder="Enter Movie ID">
+    <button onclick="showOneMovie()">Show One Movie</button>
+
+    <div id="singleMovie" class="mt-5"></div>
+
+    <script>
+        // Fetch all movies and display them
+        function fetchData() {
+            fetch("http://localhost:8080/listMovies")
+                .then(response => response.json())
+                .then(myMovies => {
+                    loadMovies(myMovies);
+                })
+                .catch(err => console.log("error:" + err));
+        }
+
+        // Load movie cards into the page
+        function loadMovies(myMovies) {
+            var CardMovie = document.getElementById("col");
+            CardMovie.innerHTML = '';  // Clear previous movies before loading new ones
+
+            for (var i = 0; i < myMovies.length; i++) {
+                let title = myMovies[i].title;
+                let year = myMovies[i].year;
+                let url = myMovies[i].url;
+
+                let AddCardMovie = document.createElement("div");
+                AddCardMovie.classList.add("col");
+
+                AddCardMovie.innerHTML = `
+                  <div class="card shadow-sm">
+                    <img src=${url} class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text"> <strong>${title}</strong>, ${year}</p>
+                    </div>
+                  </div>
+                `;
+                CardMovie.appendChild(AddCardMovie);
+            }
+        }
+
+        // Show a single movie by ID
+        function showOneMovie() {
+            let id = document.getElementById("movieId").value;
+            fetch(`http://localhost:8080/listMovies/${id}`)
+                .then(response => response.json())
+                .then(myFavoriteMovie => {
+                    displaySingleMovie(myFavoriteMovie);
+                })
+                .catch(err => {
+                    console.log(err);
+                    document.getElementById("singleMovie").innerHTML = "Movie not found.";
+                });
+        }
+
+        // Display a single movie's details
+        function displaySingleMovie(movie) {
+            let movieDiv = document.getElementById("singleMovie");
+            movieDiv.innerHTML = '';  // Clear any previous content
+
+            if (!movie) {
+                movieDiv.innerHTML = "Movie not found.";
+                return;
+            }
+
+            let title = movie.title;
+            let year = movie.year;
+            let url = movie.url;
+            let description = movie.description || "No description available";
+
+            movieDiv.innerHTML = `
+                <div class="card" style="width: 18rem;">
+                    <img src="${url}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">${title} (${year})</h5>
+                        <p class="card-text">${description}</p>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Fetch movie data when the page loads
+        fetchData();
+    </script>
+</body>
+</html>

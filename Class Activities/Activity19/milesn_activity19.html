@@ -1,0 +1,66 @@
+<!--
+Miles Nichols
+milesn@iastate.edu
+11/18/24
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Best Robots</h1>
+
+    <!-- Robots List -->
+    <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+            <div id="col" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3"></div>
+        </div>
+    </div>
+
+    <!-- Show One Robot -->
+    <div class="container my-4">
+        <h2>Find Robot</h2>
+        <input id="robotId" placeholder="Enter Robot ID">
+        <button onclick="showOneRobot()">Find Robot</button>
+        <div id="singleRobot" class="mt-4"></div>
+    </div>
+
+    <!-- Add New Robot -->
+    <div class="container my-4">
+        <h2>Add New Robot</h2>
+        <input id="addId" placeholder="Robot ID">
+        <input id="addName" placeholder="Robot Name">
+        <input id="addPrice" placeholder="Robot Price">
+        <input id="addDescription" placeholder="Robot Description">
+        <input id="addImageUrl" placeholder="Robot Image URL">
+        <button onclick="addRobot()">Add Robot</button>
+    </div>
+
+    <!-- Delete Robot -->
+    <div class="container my-4">
+        <h2>Delete Robot</h2>
+        <input id="deleteId" placeholder="Enter Robot ID to Delete">
+    <button onclick="deleteOneRobot()">Delete Robot</button>
+    </div>
+
+    <!-- Update Robot -->
+    <div class="container my-4">
+        <h2>Update Robot</h2>
+            <input id="updateId" placeholder="Robot ID">
+            <input id="updateName" placeholder="Updated Name">
+            <input id="updatePrice" placeholder="Updated Price">
+            <input id="updateDescription" placeholder="Updated Description">
+            <input id="updateImageUrl" placeholder="Updated Image URL">
+    <button onclick="updateOneRobot()">Update Robot</button>
+    </div>
+
+
+    <script src="milesn_activity19_frontend.js"></script>
+</body>
+</html>
