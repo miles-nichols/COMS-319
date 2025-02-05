@@ -1,1 +1,1 @@
-My work from ISU 319 Construction of User Interfaces.
+Assignments for Construction of User Interfaces at Iowa STate University. 
